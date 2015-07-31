@@ -1,0 +1,7 @@
+<div>{{#link-to 'messages.new'}}Add a new message{{/link-to}}</div>
+
+{{outlet}}
+
+{{#each message in model}}
+	<div>{{message.name}}: {{message.body}}</div>
+{{/each}}
